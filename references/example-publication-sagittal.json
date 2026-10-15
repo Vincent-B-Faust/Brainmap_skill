@@ -1,0 +1,121 @@
+{
+  "title": "Thermoregulatory circuit schematic",
+  "view": {
+    "plane": "sagittal",
+    "mode": "projection",
+    "position_um": 5700,
+    "hemisphere": "right",
+    "slab_um": [
+      5700,
+      11375
+    ]
+  },
+  "illustration": {
+    "background": "allen-reconstruction",
+    "atlas": "mouse_2011",
+    "allow_reconstruction": true
+  },
+  "regions": [
+    {
+      "label": "POA",
+      "structures": [
+        "MPO",
+        "MEPO",
+        "LPO"
+      ],
+      "color": "#649E81"
+    },
+    {
+      "structure": "PVH",
+      "color": "#8477AC",
+      "fill_color": "#7870C5"
+    },
+    {
+      "structure": "DMH",
+      "color": "#D2A35D"
+    },
+    {
+      "label": "Arc",
+      "structure": "ARH",
+      "color": "#C7786D",
+      "fill_color": "#C85D59"
+    },
+    {
+      "label": "LPB",
+      "structure": "PBl",
+      "color": "#6097B0"
+    },
+    {
+      "structure": "RPA",
+      "color": "#BD8195"
+    }
+  ],
+  "connections": [
+    {
+      "from": "LPB",
+      "to": "POA",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 300
+    },
+    {
+      "from": "LPB",
+      "to": "DMH",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 90
+    },
+    {
+      "from": "DMH",
+      "to": "PVH",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 80
+    },
+    {
+      "from": "DMH",
+      "to": "RPA",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": -130
+    },
+    {
+      "from": "POA",
+      "to": "DMH",
+      "kind": "inhibitory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": -30
+    },
+    {
+      "from": "POA",
+      "to": "RPA",
+      "kind": "inhibitory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": -80
+    },
+    {
+      "from": "POA",
+      "to": "Arc",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "color": "#657178",
+      "bend_px": 40
+    },
+    {
+      "from": "Arc",
+      "to": "POA",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "color": "#657178",
+      "bend_px": 40
+    }
+  ]
+}

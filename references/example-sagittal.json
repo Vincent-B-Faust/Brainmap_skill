@@ -1,0 +1,31 @@
+{
+  "title": "Hypothalamic regions — actual parasagittal section",
+  "view": {
+    "plane": "sagittal",
+    "mode": "slice",
+    "position_um": 5500,
+    "hemisphere": "left"
+  },
+  "regions": [
+    {
+      "structure": "PVH"
+    },
+    {
+      "structure": "DMH"
+    },
+    {
+      "label": "Arc",
+      "structure": "ARH"
+    }
+  ],
+  "context_structures": [
+    "CTX",
+    "CB",
+    "HY",
+    "TH",
+    "MB",
+    "P",
+    "MY"
+  ],
+  "allow_absent": false
+}

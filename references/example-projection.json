@@ -1,0 +1,80 @@
+{
+  "title": "Thermoregulatory regions — atlas-grounded schematic",
+  "view": {
+    "plane": "sagittal",
+    "mode": "projection",
+    "position_um": 5700,
+    "hemisphere": "right",
+    "slab_um": [
+      5700,
+      11375
+    ]
+  },
+  "regions": [
+    {
+      "label": "POA (defined union)",
+      "structures": [
+        "MPO",
+        "MEPO",
+        "LPO"
+      ],
+      "color": "#67985b"
+    },
+    {
+      "label": "PVH",
+      "structure": "PVH",
+      "color": "#7965ba"
+    },
+    {
+      "label": "DMH",
+      "structure": "DMH",
+      "color": "#c68f41"
+    },
+    {
+      "label": "Arc",
+      "structure": "ARH",
+      "color": "#bd5c56"
+    },
+    {
+      "label": "LPB",
+      "structure": "PBl",
+      "color": "#4d91b5"
+    },
+    {
+      "label": "RPA",
+      "structure": "RPA",
+      "color": "#b65b7b"
+    }
+  ],
+  "context_structures": [
+    "CTX",
+    "CB",
+    "HY",
+    "TH",
+    "MB",
+    "P",
+    "MY"
+  ],
+  "connections": [
+    {
+      "from": "DMH",
+      "to": "RPA",
+      "kind": "projection",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "color": "#3486b5",
+      "bend_px": -85
+    },
+    {
+      "from": "POA (defined union)",
+      "to": "DMH",
+      "kind": "inhibitory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "color": "#bc4c41",
+      "bend_px": -30
+    }
+  ],
+  "bioart_mouse_inset": true,
+  "allow_absent": true
+}

@@ -1,0 +1,43 @@
+{
+  "template_id": "allen-2-100883900",
+  "regions": [
+    {
+      "label": "VTA DA",
+      "structure": "VTA",
+      "color": "#BD945C",
+      "fill_color": "#EFDEC2"
+    },
+    {
+      "label": "NAc",
+      "structure": "ACB",
+      "color": "#709C89",
+      "fill_color": "#DEEBE2"
+    },
+    {
+      "label": "PL",
+      "structure": "PL",
+      "color": "#8A80AB",
+      "fill_color": "#E6E1EF"
+    }
+  ],
+  "connections": [
+    {
+      "from": "VTA DA",
+      "to": "PL",
+      "kind": "projection",
+      "evidence": "published",
+      "source": "VTA DA projection to the prelimbic component of medial PFC; https://doi.org/10.1016/j.biopsych.2017.06.009 ; schematic pathway, not a functional activation sign",
+      "color": "#B58C55",
+      "bend_px": 170
+    },
+    {
+      "from": "VTA DA",
+      "to": "NAc",
+      "kind": "projection",
+      "evidence": "published",
+      "source": "VTA DA projection to nucleus accumbens; https://doi.org/10.1016/j.neuron.2011.03.025 ; anatomical target shown broadly as ACB, not a shell-specific reconstruction",
+      "color": "#B58C55",
+      "bend_px": 70
+    }
+  ]
+}

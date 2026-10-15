@@ -1,0 +1,24 @@
+{
+  "title": "DMH and Arc — actual coronal atlas section",
+  "view": {
+    "plane": "coronal",
+    "mode": "slice",
+    "position_um": 6975,
+    "hemisphere": "both"
+  },
+  "regions": [
+    {
+      "structure": "DMH"
+    },
+    {
+      "label": "Arc",
+      "structure": "ARH"
+    }
+  ],
+  "context_structures": [
+    "CTX",
+    "TH",
+    "HY"
+  ],
+  "allow_absent": false
+}

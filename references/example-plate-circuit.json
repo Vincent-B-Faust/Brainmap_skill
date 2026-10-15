@@ -1,0 +1,23 @@
+{
+  "template_id": "allen-2-100883921",
+  "regions": [
+    {
+      "structure": "PVH",
+      "color": "#8477AC"
+    },
+    {
+      "structure": "DMH",
+      "color": "#D2A35D"
+    }
+  ],
+  "connections": [
+    {
+      "from": "DMH",
+      "to": "PVH",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 70
+    }
+  ]
+}

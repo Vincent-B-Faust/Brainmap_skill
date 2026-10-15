@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brainmap Skill rendering request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["view", "regions"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1},
+    "view": {
+      "type": "object", "additionalProperties": false, "required": ["position_um"],
+      "properties": {
+        "plane": {"enum": ["sagittal", "coronal", "horizontal"]},
+        "mode": {"enum": ["slice", "projection"]},
+        "position_um": {"type": "number", "minimum": 0},
+        "hemisphere": {"enum": ["both", "left", "right"]},
+        "slab_um": {"type": "array", "items": {"type": "number", "minimum": 0}, "minItems": 2, "maxItems": 2},
+        "rotation_deg_ap_dv_ml": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3}
+      }
+    },
+    "regions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/region"}},
+    "context_structures": {"type": "array", "items": {"$ref": "#/$defs/structure"}},
+    "allow_absent": {"type": "boolean"},
+    "bioart_mouse_inset": {"type": "boolean"},
+    "illustration": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "background": {"enum": ["bioart", "allen-reconstruction"]},
+        "atlas": {"enum": ["mouse_2011", "ccf_2017"]},
+        "allow_reconstruction": {"type": "boolean"}
+      }
+    },
+    "connections": {"type": "array", "items": {"$ref": "#/$defs/connection"}}
+  },
+  "$defs": {
+    "structure": {"oneOf": [{"type": "integer", "minimum": 1}, {"type": "string", "minLength": 1}]},
+    "color": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+    "region": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "structure": {"$ref": "#/$defs/structure"},
+        "structures": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/structure"}},
+        "label": {"type": "string", "minLength": 1},
+        "color": {"$ref": "#/$defs/color"},
+        "fill_color": {"$ref": "#/$defs/color"}
+      },
+      "anyOf": [{"required": ["structure"]}, {"required": ["structures"]}, {"required": ["label"]}],
+      "not": {"required": ["structure", "structures"]}
+    },
+    "connection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["from", "to", "evidence", "source"],
+      "properties": {
+        "from": {"type": "string", "minLength": 1},
+        "to": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["projection", "excitatory", "inhibitory"]},
+        "evidence": {"enum": ["published", "user-specified", "hypothesis"]},
+        "source": {"type": "string", "minLength": 1},
+        "color": {"$ref": "#/$defs/color"},
+        "bend_px": {"type": "number"}
+      }
+    }
+  }
+}

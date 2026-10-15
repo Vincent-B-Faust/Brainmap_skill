@@ -1,0 +1,80 @@
+{
+  "id": "allen-1-100960456",
+  "species": "Mus musculus",
+  "age": "P56",
+  "plane": "coronal",
+  "atlas_id": 1,
+  "atlas_name": "Mouse P56 Coronal",
+  "image_id": 100960456,
+  "section_number": 65,
+  "source_url": "https://api.brain-map.org/api/v2/svg_download/100960456?groups=28",
+  "source_sha256": "cc90f78654dc996470bbce6c0b61188e154ad7b0b19bdc0e5396cfcc1717e248",
+  "source_file": "source.svg",
+  "base_file": "base.svg",
+  "license": "Allen Institute Terms of Use; research/noncommercial use; source rights retained",
+  "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+  "citation": "Allen Institute for Brain Science. Allen Mouse Brain Reference Atlas. https://atlas.brain-map.org/",
+  "coordinate_system": "original plate SVG pixels; not volumetric CCF or Bregma",
+  "hemisphere_note": "As published; unilateral plates are not mirrored to invent a full section",
+  "source_size": [
+    5392.0,
+    5152.0
+  ],
+  "mask_width": 1000,
+  "mask_to_canvas_scale": 1.0889292196007259,
+  "mask_to_canvas_offset": [
+    -226.8384754990925,
+    -247.47731397459165
+  ],
+  "source_structure_ids": [
+    8,
+    98,
+    151,
+    188,
+    196,
+    204,
+    212,
+    220,
+    228,
+    236,
+    244,
+    507,
+    688,
+    698,
+    1009
+  ],
+  "context_layers": [
+    {
+      "query": "CTX",
+      "source_structure_ids": [
+        151,
+        188,
+        196,
+        204,
+        212,
+        220,
+        228,
+        236,
+        244,
+        507,
+        688,
+        698
+      ]
+    },
+    {
+      "query": "fiber tracts",
+      "source_structure_ids": [
+        1009
+      ]
+    },
+    {
+      "query": "VS",
+      "source_structure_ids": [
+        98
+      ]
+    }
+  ],
+  "style": "gray-white-reference-v1",
+  "modifications": "Source paths rasterized only for masks, simplified to closed cubic vector background; small islands omitted. Original source.svg unchanged. Placement QA uses unsmoothed source-path masks.",
+  "base_sha256": "85a8bbb5d9cbcf6e3e8840c8d5003887e5da30085e9c2d3799ffea47111b4833"
+}

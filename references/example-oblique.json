@@ -1,0 +1,31 @@
+{
+  "title": "Oblique coronal section — target visibility audit",
+  "view": {
+    "plane": "coronal",
+    "mode": "slice",
+    "position_um": 6400,
+    "rotation_deg_ap_dv_ml": [
+      0,
+      12,
+      0
+    ],
+    "hemisphere": "both"
+  },
+  "regions": [
+    {
+      "structure": "PVH"
+    },
+    {
+      "structure": "DMH"
+    },
+    {
+      "structure": "ARH"
+    }
+  ],
+  "context_structures": [
+    "CTX",
+    "TH",
+    "HY"
+  ],
+  "allow_absent": true
+}

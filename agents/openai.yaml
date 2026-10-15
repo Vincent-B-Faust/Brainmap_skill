@@ -1,0 +1,4 @@
+interface:
+  display_name: "Allen 小鼠脑区精准示意图"
+  short_description: "优先使用脑片素材库，按 Allen 定位并绘制简洁矢量回路图"
+  default_prompt: "使用 $allen-mouse-brain-schematic，优先使用 brainmap-library，按 Allen 核验脑区位置，只输出必要示意图；保持脑片边界等粗，并保留源图的小脑纹理。"

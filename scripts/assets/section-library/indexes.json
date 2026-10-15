@@ -1,0 +1,2037 @@
+{
+  "atlases": [
+    {
+      "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AAtlasImage%2Crma%3A%3Acriteria%2C%5Bannotated%24eqtrue%5D%2Catlas_data_set%28atlases%5Bid%24eq1%5D%29%2Crma%3A%3Aoptions%5Border%24eq%27sub_images.section_number%27%5D%5Bnum_rows%24eqall%5D",
+      "atlas_id": 1,
+      "plates": [
+        {
+          "id": 100960520,
+          "section_number": 1,
+          "resolution": 1.047,
+          "width": 4400,
+          "height": 4064
+        },
+        {
+          "id": 100960516,
+          "section_number": 5,
+          "resolution": 1.047,
+          "width": 4544,
+          "height": 4160
+        },
+        {
+          "id": 100960512,
+          "section_number": 9,
+          "resolution": 1.047,
+          "width": 4160,
+          "height": 4096
+        },
+        {
+          "id": 100960508,
+          "section_number": 13,
+          "resolution": 1.047,
+          "width": 4416,
+          "height": 4160
+        },
+        {
+          "id": 100960504,
+          "section_number": 17,
+          "resolution": 1.047,
+          "width": 4288,
+          "height": 4032
+        },
+        {
+          "id": 100960500,
+          "section_number": 21,
+          "resolution": 1.047,
+          "width": 4992,
+          "height": 4816
+        },
+        {
+          "id": 100960496,
+          "section_number": 25,
+          "resolution": 1.047,
+          "width": 4608,
+          "height": 4416
+        },
+        {
+          "id": 100960492,
+          "section_number": 29,
+          "resolution": 1.047,
+          "width": 4544,
+          "height": 4480
+        },
+        {
+          "id": 100960488,
+          "section_number": 33,
+          "resolution": 1.047,
+          "width": 4864,
+          "height": 4352
+        },
+        {
+          "id": 100960484,
+          "section_number": 37,
+          "resolution": 1.047,
+          "width": 4672,
+          "height": 4352
+        },
+        {
+          "id": 100960480,
+          "section_number": 41,
+          "resolution": 1.047,
+          "width": 4608,
+          "height": 4160
+        },
+        {
+          "id": 100960476,
+          "section_number": 45,
+          "resolution": 1.047,
+          "width": 4864,
+          "height": 4224
+        },
+        {
+          "id": 100960472,
+          "section_number": 49,
+          "resolution": 1.047,
+          "width": 4800,
+          "height": 4416
+        },
+        {
+          "id": 100960468,
+          "section_number": 53,
+          "resolution": 1.047,
+          "width": 5456,
+          "height": 5120
+        },
+        {
+          "id": 100960464,
+          "section_number": 57,
+          "resolution": 1.047,
+          "width": 5184,
+          "height": 4544
+        },
+        {
+          "id": 100960460,
+          "section_number": 61,
+          "resolution": 1.047,
+          "width": 5392,
+          "height": 5408
+        },
+        {
+          "id": 100960456,
+          "section_number": 65,
+          "resolution": 1.047,
+          "width": 5392,
+          "height": 5152
+        },
+        {
+          "id": 100960452,
+          "section_number": 69,
+          "resolution": 1.047,
+          "width": 5296,
+          "height": 5472
+        },
+        {
+          "id": 100960448,
+          "section_number": 73,
+          "resolution": 1.047,
+          "width": 5280,
+          "height": 5024
+        },
+        {
+          "id": 100960444,
+          "section_number": 77,
+          "resolution": 1.047,
+          "width": 5200,
+          "height": 4800
+        },
+        {
+          "id": 100960440,
+          "section_number": 81,
+          "resolution": 1.0059,
+          "width": 5280,
+          "height": 4848
+        },
+        {
+          "id": 100960437,
+          "section_number": 86,
+          "resolution": 1.047,
+          "width": 5504,
+          "height": 5440
+        },
+        {
+          "id": 100960432,
+          "section_number": 89,
+          "resolution": 1.047,
+          "width": 5488,
+          "height": 5312
+        },
+        {
+          "id": 100960428,
+          "section_number": 93,
+          "resolution": 1.047,
+          "width": 5840,
+          "height": 5296
+        },
+        {
+          "id": 100960424,
+          "section_number": 97,
+          "resolution": 1.047,
+          "width": 6128,
+          "height": 5472
+        },
+        {
+          "id": 100960420,
+          "section_number": 101,
+          "resolution": 1.047,
+          "width": 6144,
+          "height": 5376
+        },
+        {
+          "id": 100960416,
+          "section_number": 105,
+          "resolution": 1.047,
+          "width": 6464,
+          "height": 5408
+        },
+        {
+          "id": 100960413,
+          "section_number": 110,
+          "resolution": 1.047,
+          "width": 6768,
+          "height": 5824
+        },
+        {
+          "id": 100960408,
+          "section_number": 113,
+          "resolution": 1.047,
+          "width": 6976,
+          "height": 5696
+        },
+        {
+          "id": 100960404,
+          "section_number": 117,
+          "resolution": 1.047,
+          "width": 7104,
+          "height": 5872
+        },
+        {
+          "id": 100960400,
+          "section_number": 121,
+          "resolution": 1.047,
+          "width": 7232,
+          "height": 5776
+        },
+        {
+          "id": 100960396,
+          "section_number": 125,
+          "resolution": 1.047,
+          "width": 7392,
+          "height": 6336
+        },
+        {
+          "id": 100960392,
+          "section_number": 129,
+          "resolution": 1.047,
+          "width": 7584,
+          "height": 6400
+        },
+        {
+          "id": 100960388,
+          "section_number": 133,
+          "resolution": 1.047,
+          "width": 7424,
+          "height": 6336
+        },
+        {
+          "id": 100960384,
+          "section_number": 137,
+          "resolution": 1.047,
+          "width": 7840,
+          "height": 6720
+        },
+        {
+          "id": 100960380,
+          "section_number": 141,
+          "resolution": 1.047,
+          "width": 8032,
+          "height": 6848
+        },
+        {
+          "id": 100960376,
+          "section_number": 145,
+          "resolution": 1.047,
+          "width": 8192,
+          "height": 7072
+        },
+        {
+          "id": 100960372,
+          "section_number": 149,
+          "resolution": 1.047,
+          "width": 8272,
+          "height": 7168
+        },
+        {
+          "id": 100960368,
+          "section_number": 153,
+          "resolution": 1.047,
+          "width": 8464,
+          "height": 6960
+        },
+        {
+          "id": 100960365,
+          "section_number": 158,
+          "resolution": 1.047,
+          "width": 8768,
+          "height": 7200
+        },
+        {
+          "id": 100960360,
+          "section_number": 161,
+          "resolution": 1.047,
+          "width": 8768,
+          "height": 7264
+        },
+        {
+          "id": 100960356,
+          "section_number": 165,
+          "resolution": 1.047,
+          "width": 9024,
+          "height": 7104
+        },
+        {
+          "id": 100960352,
+          "section_number": 169,
+          "resolution": 1.047,
+          "width": 9024,
+          "height": 7456
+        },
+        {
+          "id": 100960348,
+          "section_number": 173,
+          "resolution": 1.047,
+          "width": 9120,
+          "height": 7456
+        },
+        {
+          "id": 100960344,
+          "section_number": 177,
+          "resolution": 1.047,
+          "width": 8976,
+          "height": 7360
+        },
+        {
+          "id": 100960340,
+          "section_number": 181,
+          "resolution": 1.047,
+          "width": 9312,
+          "height": 7280
+        },
+        {
+          "id": 100960336,
+          "section_number": 185,
+          "resolution": 1.047,
+          "width": 9312,
+          "height": 7024
+        },
+        {
+          "id": 100960333,
+          "section_number": 190,
+          "resolution": 1.047,
+          "width": 9568,
+          "height": 7904
+        },
+        {
+          "id": 100960328,
+          "section_number": 193,
+          "resolution": 1.047,
+          "width": 9616,
+          "height": 7760
+        },
+        {
+          "id": 100960324,
+          "section_number": 197,
+          "resolution": 1.047,
+          "width": 9744,
+          "height": 7584
+        },
+        {
+          "id": 100960320,
+          "section_number": 201,
+          "resolution": 1.047,
+          "width": 9872,
+          "height": 7808
+        },
+        {
+          "id": 100960316,
+          "section_number": 205,
+          "resolution": 1.047,
+          "width": 10016,
+          "height": 7792
+        },
+        {
+          "id": 100960312,
+          "section_number": 209,
+          "resolution": 1.047,
+          "width": 10048,
+          "height": 7552
+        },
+        {
+          "id": 100960309,
+          "section_number": 214,
+          "resolution": 1.047,
+          "width": 10144,
+          "height": 7648
+        },
+        {
+          "id": 100960305,
+          "section_number": 218,
+          "resolution": 1.047,
+          "width": 10288,
+          "height": 7648
+        },
+        {
+          "id": 100960301,
+          "section_number": 222,
+          "resolution": 1.047,
+          "width": 10384,
+          "height": 7664
+        },
+        {
+          "id": 100960297,
+          "section_number": 226,
+          "resolution": 1.047,
+          "width": 10544,
+          "height": 7744
+        },
+        {
+          "id": 100960293,
+          "section_number": 230,
+          "resolution": 1.047,
+          "width": 10496,
+          "height": 7696
+        },
+        {
+          "id": 100960289,
+          "section_number": 234,
+          "resolution": 1.047,
+          "width": 10480,
+          "height": 7552
+        },
+        {
+          "id": 100960284,
+          "section_number": 237,
+          "resolution": 1.047,
+          "width": 10496,
+          "height": 7856
+        },
+        {
+          "id": 100960280,
+          "section_number": 241,
+          "resolution": 1.047,
+          "width": 10640,
+          "height": 8064
+        },
+        {
+          "id": 100960276,
+          "section_number": 245,
+          "resolution": 1.047,
+          "width": 10640,
+          "height": 7584
+        },
+        {
+          "id": 100960273,
+          "section_number": 250,
+          "resolution": 1.047,
+          "width": 10576,
+          "height": 8112
+        },
+        {
+          "id": 100960268,
+          "section_number": 253,
+          "resolution": 1.047,
+          "width": 11056,
+          "height": 7840
+        },
+        {
+          "id": 100960264,
+          "section_number": 257,
+          "resolution": 1.047,
+          "width": 10800,
+          "height": 7616
+        },
+        {
+          "id": 100960260,
+          "section_number": 261,
+          "resolution": 1.047,
+          "width": 10496,
+          "height": 8064
+        },
+        {
+          "id": 100960256,
+          "section_number": 265,
+          "resolution": 1.047,
+          "width": 11040,
+          "height": 7808
+        },
+        {
+          "id": 100960252,
+          "section_number": 269,
+          "resolution": 1.047,
+          "width": 11008,
+          "height": 7936
+        },
+        {
+          "id": 100960248,
+          "section_number": 273,
+          "resolution": 1.047,
+          "width": 10848,
+          "height": 8288
+        },
+        {
+          "id": 100960244,
+          "section_number": 277,
+          "resolution": 1.047,
+          "width": 10560,
+          "height": 7808
+        },
+        {
+          "id": 100960240,
+          "section_number": 281,
+          "resolution": 1.047,
+          "width": 10816,
+          "height": 8048
+        },
+        {
+          "id": 100960236,
+          "section_number": 285,
+          "resolution": 1.047,
+          "width": 10944,
+          "height": 8192
+        },
+        {
+          "id": 100960232,
+          "section_number": 289,
+          "resolution": 1.047,
+          "width": 10976,
+          "height": 7936
+        },
+        {
+          "id": 100960228,
+          "section_number": 293,
+          "resolution": 1.047,
+          "width": 11072,
+          "height": 8287
+        },
+        {
+          "id": 100960224,
+          "section_number": 297,
+          "resolution": 1.047,
+          "width": 10560,
+          "height": 7552
+        },
+        {
+          "id": 100960084,
+          "section_number": 301,
+          "resolution": 1.047,
+          "width": 11040,
+          "height": 7856
+        },
+        {
+          "id": 100960092,
+          "section_number": 305,
+          "resolution": 1.047,
+          "width": 11008,
+          "height": 8384
+        },
+        {
+          "id": 100960088,
+          "section_number": 309,
+          "resolution": 1.047,
+          "width": 10960,
+          "height": 7264
+        },
+        {
+          "id": 100960081,
+          "section_number": 314,
+          "resolution": 1.047,
+          "width": 11008,
+          "height": 8496
+        },
+        {
+          "id": 100960076,
+          "section_number": 317,
+          "resolution": 1.047,
+          "width": 11024,
+          "height": 7936
+        },
+        {
+          "id": 100960073,
+          "section_number": 322,
+          "resolution": 1.047,
+          "width": 11040,
+          "height": 8096
+        },
+        {
+          "id": 100960069,
+          "section_number": 326,
+          "resolution": 1.047,
+          "width": 10880,
+          "height": 8528
+        },
+        {
+          "id": 100960065,
+          "section_number": 330,
+          "resolution": 1.047,
+          "width": 11008,
+          "height": 8288
+        },
+        {
+          "id": 100960061,
+          "section_number": 334,
+          "resolution": 1.047,
+          "width": 11024,
+          "height": 8224
+        },
+        {
+          "id": 100960057,
+          "section_number": 338,
+          "resolution": 1.047,
+          "width": 11040,
+          "height": 7552
+        },
+        {
+          "id": 100960053,
+          "section_number": 342,
+          "resolution": 1.047,
+          "width": 10992,
+          "height": 7488
+        },
+        {
+          "id": 100960049,
+          "section_number": 346,
+          "resolution": 1.047,
+          "width": 10992,
+          "height": 7552
+        },
+        {
+          "id": 100960044,
+          "section_number": 349,
+          "resolution": 1.047,
+          "width": 10944,
+          "height": 7136
+        },
+        {
+          "id": 100960525,
+          "section_number": 354,
+          "resolution": 1.047,
+          "width": 10832,
+          "height": 7408
+        },
+        {
+          "id": 100960041,
+          "section_number": 358,
+          "resolution": 1.047,
+          "width": 10944,
+          "height": 7696
+        },
+        {
+          "id": 100960037,
+          "section_number": 362,
+          "resolution": 1.047,
+          "width": 10736,
+          "height": 7872
+        },
+        {
+          "id": 100960033,
+          "section_number": 366,
+          "resolution": 1.047,
+          "width": 10800,
+          "height": 7872
+        },
+        {
+          "id": 100966117,
+          "section_number": 370,
+          "resolution": 1.047,
+          "width": 11072,
+          "height": 8256
+        },
+        {
+          "id": 100966113,
+          "section_number": 374,
+          "resolution": 1.047,
+          "width": 10880,
+          "height": 7728
+        },
+        {
+          "id": 100966108,
+          "section_number": 377,
+          "resolution": 1.047,
+          "width": 10880,
+          "height": 7728
+        },
+        {
+          "id": 100966105,
+          "section_number": 382,
+          "resolution": 1.047,
+          "width": 10240,
+          "height": 7232
+        },
+        {
+          "id": 100966101,
+          "section_number": 386,
+          "resolution": 1.047,
+          "width": 9984,
+          "height": 7360
+        },
+        {
+          "id": 100966096,
+          "section_number": 389,
+          "resolution": 1.047,
+          "width": 10176,
+          "height": 7888
+        },
+        {
+          "id": 100966092,
+          "section_number": 393,
+          "resolution": 1.047,
+          "width": 10192,
+          "height": 7792
+        },
+        {
+          "id": 100966088,
+          "section_number": 397,
+          "resolution": 1.047,
+          "width": 10112,
+          "height": 7552
+        },
+        {
+          "id": 100960221,
+          "section_number": 402,
+          "resolution": 1.047,
+          "width": 9872,
+          "height": 8016
+        },
+        {
+          "id": 100960216,
+          "section_number": 405,
+          "resolution": 1.047,
+          "width": 9344,
+          "height": 7168
+        },
+        {
+          "id": 100960212,
+          "section_number": 409,
+          "resolution": 1.047,
+          "width": 9600,
+          "height": 7232
+        },
+        {
+          "id": 100960208,
+          "section_number": 413,
+          "resolution": 1.047,
+          "width": 9120,
+          "height": 7424
+        },
+        {
+          "id": 100960204,
+          "section_number": 417,
+          "resolution": 1.047,
+          "width": 9152,
+          "height": 7536
+        },
+        {
+          "id": 100960200,
+          "section_number": 421,
+          "resolution": 1.047,
+          "width": 8704,
+          "height": 6911
+        },
+        {
+          "id": 100960197,
+          "section_number": 426,
+          "resolution": 1.047,
+          "width": 8576,
+          "height": 6912
+        },
+        {
+          "id": 100960192,
+          "section_number": 429,
+          "resolution": 1.047,
+          "width": 9456,
+          "height": 7440
+        },
+        {
+          "id": 100960188,
+          "section_number": 433,
+          "resolution": 1.047,
+          "width": 9408,
+          "height": 7728
+        },
+        {
+          "id": 100960184,
+          "section_number": 437,
+          "resolution": 1.047,
+          "width": 9248,
+          "height": 7504
+        },
+        {
+          "id": 100960181,
+          "section_number": 442,
+          "resolution": 1.047,
+          "width": 9440,
+          "height": 7584
+        },
+        {
+          "id": 100960176,
+          "section_number": 445,
+          "resolution": 1.047,
+          "width": 9392,
+          "height": 7328
+        },
+        {
+          "id": 100960172,
+          "section_number": 449,
+          "resolution": 1.047,
+          "width": 9200,
+          "height": 7552
+        },
+        {
+          "id": 100960168,
+          "section_number": 453,
+          "resolution": 1.047,
+          "width": 9184,
+          "height": 7760
+        },
+        {
+          "id": 100960165,
+          "section_number": 458,
+          "resolution": 1.047,
+          "width": 9040,
+          "height": 7712
+        },
+        {
+          "id": 100960160,
+          "section_number": 461,
+          "resolution": 1.047,
+          "width": 8832,
+          "height": 7536
+        },
+        {
+          "id": 100960156,
+          "section_number": 465,
+          "resolution": 1.047,
+          "width": 8864,
+          "height": 7888
+        },
+        {
+          "id": 100960152,
+          "section_number": 469,
+          "resolution": 1.047,
+          "width": 8192,
+          "height": 7183
+        },
+        {
+          "id": 100960148,
+          "section_number": 473,
+          "resolution": 1.047,
+          "width": 8784,
+          "height": 7664
+        },
+        {
+          "id": 100960144,
+          "section_number": 477,
+          "resolution": 1.047,
+          "width": 8320,
+          "height": 7232
+        },
+        {
+          "id": 100960140,
+          "section_number": 481,
+          "resolution": 1.047,
+          "width": 8256,
+          "height": 7104
+        },
+        {
+          "id": 100960136,
+          "section_number": 485,
+          "resolution": 1.047,
+          "width": 8752,
+          "height": 7696
+        },
+        {
+          "id": 100960132,
+          "section_number": 489,
+          "resolution": 1.047,
+          "width": 7936,
+          "height": 6912
+        },
+        {
+          "id": 100960128,
+          "section_number": 493,
+          "resolution": 1.047,
+          "width": 8512,
+          "height": 7408
+        },
+        {
+          "id": 100960124,
+          "section_number": 497,
+          "resolution": 1.047,
+          "width": 7808,
+          "height": 6848
+        },
+        {
+          "id": 100960120,
+          "section_number": 501,
+          "resolution": 1.047,
+          "width": 8336,
+          "height": 7360
+        },
+        {
+          "id": 100960116,
+          "section_number": 505,
+          "resolution": 1.047,
+          "width": 8016,
+          "height": 7424
+        },
+        {
+          "id": 100960112,
+          "section_number": 509,
+          "resolution": 1.047,
+          "width": 7776,
+          "height": 6976
+        },
+        {
+          "id": 100960108,
+          "section_number": 513,
+          "resolution": 1.047,
+          "width": 6912,
+          "height": 6656
+        },
+        {
+          "id": 100960104,
+          "section_number": 517,
+          "resolution": 1.047,
+          "width": 7152,
+          "height": 6448
+        },
+        {
+          "id": 100960101,
+          "section_number": 522,
+          "resolution": 1.047,
+          "width": 6480,
+          "height": 5872
+        },
+        {
+          "id": 100960098,
+          "section_number": 527,
+          "resolution": 1.047,
+          "width": 5552,
+          "height": 3680
+        }
+      ],
+      "plane": "coronal",
+      "atlas_name": "Mouse P56 Coronal"
+    },
+    {
+      "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AAtlasImage%2Crma%3A%3Acriteria%2C%5Bannotated%24eqtrue%5D%2Catlas_data_set%28atlases%5Bid%24eq2%5D%29%2Crma%3A%3Aoptions%5Border%24eq%27sub_images.section_number%27%5D%5Bnum_rows%24eqall%5D",
+      "atlas_id": 2,
+      "plates": [
+        {
+          "id": 100883914,
+          "section_number": 42,
+          "resolution": 1.047,
+          "width": 9360,
+          "height": 6416
+        },
+        {
+          "id": 100883926,
+          "section_number": 50,
+          "resolution": 1.047,
+          "width": 9808,
+          "height": 6656
+        },
+        {
+          "id": 100883933,
+          "section_number": 57,
+          "resolution": 1.047,
+          "width": 10256,
+          "height": 6752
+        },
+        {
+          "id": 100883938,
+          "section_number": 66,
+          "resolution": 1.047,
+          "width": 10544,
+          "height": 7104
+        },
+        {
+          "id": 100883954,
+          "section_number": 74,
+          "resolution": 1.047,
+          "width": 11120,
+          "height": 7600
+        },
+        {
+          "id": 100883805,
+          "section_number": 81,
+          "resolution": 1.047,
+          "width": 11200,
+          "height": 6848
+        },
+        {
+          "id": 100883846,
+          "section_number": 90,
+          "resolution": 1.047,
+          "width": 11712,
+          "height": 7456
+        },
+        {
+          "id": 100884070,
+          "section_number": 98,
+          "resolution": 1.047,
+          "width": 11824,
+          "height": 7200
+        },
+        {
+          "id": 100883813,
+          "section_number": 105,
+          "resolution": 1.047,
+          "width": 12160,
+          "height": 7360
+        },
+        {
+          "id": 100884125,
+          "section_number": 113,
+          "resolution": 1.047,
+          "width": 13616,
+          "height": 7504
+        },
+        {
+          "id": 100884129,
+          "section_number": 121,
+          "resolution": 1.047,
+          "width": 14368,
+          "height": 7728
+        },
+        {
+          "id": 100883770,
+          "section_number": 130,
+          "resolution": 1.047,
+          "width": 14976,
+          "height": 7616
+        },
+        {
+          "id": 100883818,
+          "section_number": 138,
+          "resolution": 1.047,
+          "width": 15200,
+          "height": 7696
+        },
+        {
+          "id": 100883869,
+          "section_number": 145,
+          "resolution": 1.047,
+          "width": 15504,
+          "height": 7824
+        },
+        {
+          "id": 100883867,
+          "section_number": 155,
+          "resolution": 1.047,
+          "width": 15536,
+          "height": 8048
+        },
+        {
+          "id": 100883888,
+          "section_number": 164,
+          "resolution": 1.047,
+          "width": 15376,
+          "height": 7808
+        },
+        {
+          "id": 100883804,
+          "section_number": 172,
+          "resolution": 1.047,
+          "width": 15344,
+          "height": 8000
+        },
+        {
+          "id": 100883900,
+          "section_number": 180,
+          "resolution": 1.047,
+          "width": 15040,
+          "height": 8880
+        },
+        {
+          "id": 100883858,
+          "section_number": 186,
+          "resolution": 1.047,
+          "width": 14624,
+          "height": 8672
+        },
+        {
+          "id": 100883851,
+          "section_number": 195,
+          "resolution": 1.047,
+          "width": 14752,
+          "height": 7872
+        },
+        {
+          "id": 100883921,
+          "section_number": 201,
+          "resolution": 1.047,
+          "width": 14896,
+          "height": 7712
+        },
+        {
+          "id": 100883791,
+          "section_number": 367,
+          "resolution": 1.047,
+          "width": 7296,
+          "height": 5120
+        }
+      ],
+      "plane": "sagittal",
+      "atlas_name": "Mouse P56 Sagittal"
+    },
+    {
+      "url": "https://api.brain-map.org/api/v2/data/query.json?criteria=model%3A%3AAtlasImage%2Crma%3A%3Acriteria%2C%5Bannotated%24eqtrue%5D%2Catlas_data_set%28atlases%5Bid%24eq602630314%5D%29%2Crma%3A%3Aoptions%5Border%24eq%27sub_images.section_number%27%5D%5Bnum_rows%24eqall%5D",
+      "atlas_id": 602630314,
+      "plates": [
+        {
+          "id": 576991187,
+          "section_number": 3,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576991103,
+          "section_number": 13,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576991063,
+          "section_number": 23,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576991023,
+          "section_number": 33,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990983,
+          "section_number": 43,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990943,
+          "section_number": 53,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990901,
+          "section_number": 63,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990861,
+          "section_number": 73,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990821,
+          "section_number": 83,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990781,
+          "section_number": 93,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990741,
+          "section_number": 103,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990701,
+          "section_number": 113,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990661,
+          "section_number": 123,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990621,
+          "section_number": 133,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990581,
+          "section_number": 143,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990541,
+          "section_number": 153,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990501,
+          "section_number": 163,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990461,
+          "section_number": 173,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990421,
+          "section_number": 183,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990381,
+          "section_number": 193,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576991267,
+          "section_number": 203,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576991227,
+          "section_number": 213,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990353,
+          "section_number": 223,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990313,
+          "section_number": 233,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990273,
+          "section_number": 243,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989589,
+          "section_number": 253,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989549,
+          "section_number": 263,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989509,
+          "section_number": 273,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989469,
+          "section_number": 283,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989429,
+          "section_number": 293,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989389,
+          "section_number": 303,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989349,
+          "section_number": 313,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989309,
+          "section_number": 323,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989269,
+          "section_number": 333,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989229,
+          "section_number": 343,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989189,
+          "section_number": 353,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989149,
+          "section_number": 363,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989109,
+          "section_number": 373,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989069,
+          "section_number": 383,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989029,
+          "section_number": 393,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988989,
+          "section_number": 403,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988949,
+          "section_number": 413,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988909,
+          "section_number": 423,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988869,
+          "section_number": 433,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576991143,
+          "section_number": 443,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988833,
+          "section_number": 453,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988793,
+          "section_number": 463,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987993,
+          "section_number": 473,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987953,
+          "section_number": 483,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987913,
+          "section_number": 493,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987873,
+          "section_number": 503,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987833,
+          "section_number": 513,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987793,
+          "section_number": 523,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987753,
+          "section_number": 533,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987713,
+          "section_number": 543,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987673,
+          "section_number": 553,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987633,
+          "section_number": 563,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987593,
+          "section_number": 573,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987553,
+          "section_number": 583,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987513,
+          "section_number": 593,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987473,
+          "section_number": 603,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987433,
+          "section_number": 613,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987387,
+          "section_number": 623,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987346,
+          "section_number": 633,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987303,
+          "section_number": 643,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987259,
+          "section_number": 653,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990261,
+          "section_number": 663,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990221,
+          "section_number": 673,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990181,
+          "section_number": 683,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990141,
+          "section_number": 693,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990101,
+          "section_number": 703,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990061,
+          "section_number": 713,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990036,
+          "section_number": 719,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576990020,
+          "section_number": 723,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989980,
+          "section_number": 733,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989940,
+          "section_number": 743,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989900,
+          "section_number": 753,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989860,
+          "section_number": 763,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989820,
+          "section_number": 773,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989779,
+          "section_number": 783,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987211,
+          "section_number": 793,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987171,
+          "section_number": 803,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987131,
+          "section_number": 813,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987091,
+          "section_number": 823,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987051,
+          "section_number": 833,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576987011,
+          "section_number": 843,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986971,
+          "section_number": 853,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986931,
+          "section_number": 863,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986891,
+          "section_number": 873,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986851,
+          "section_number": 883,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986811,
+          "section_number": 893,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986771,
+          "section_number": 903,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986731,
+          "section_number": 913,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986691,
+          "section_number": 923,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986651,
+          "section_number": 933,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986611,
+          "section_number": 943,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986571,
+          "section_number": 953,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986531,
+          "section_number": 963,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986491,
+          "section_number": 973,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986451,
+          "section_number": 983,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986411,
+          "section_number": 993,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986371,
+          "section_number": 1003,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988729,
+          "section_number": 1013,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988689,
+          "section_number": 1023,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988649,
+          "section_number": 1033,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988609,
+          "section_number": 1043,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988569,
+          "section_number": 1053,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988529,
+          "section_number": 1063,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988489,
+          "section_number": 1073,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988449,
+          "section_number": 1083,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988409,
+          "section_number": 1093,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988369,
+          "section_number": 1103,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988329,
+          "section_number": 1113,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988289,
+          "section_number": 1123,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988249,
+          "section_number": 1133,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988209,
+          "section_number": 1143,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988169,
+          "section_number": 1153,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988129,
+          "section_number": 1163,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988089,
+          "section_number": 1173,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988049,
+          "section_number": 1183,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576988009,
+          "section_number": 1193,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989723,
+          "section_number": 1203,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989682,
+          "section_number": 1213,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576989642,
+          "section_number": 1223,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986339,
+          "section_number": 1233,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986299,
+          "section_number": 1243,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986259,
+          "section_number": 1253,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986219,
+          "section_number": 1263,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986179,
+          "section_number": 1273,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986139,
+          "section_number": 1283,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986099,
+          "section_number": 1293,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986059,
+          "section_number": 1303,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        },
+        {
+          "id": 576986019,
+          "section_number": 1313,
+          "resolution": 1.0,
+          "width": 11400,
+          "height": 8000
+        }
+      ],
+      "plane": "coronal",
+      "atlas_name": "Adult Mouse 3D Coronal"
+    }
+  ]
+}

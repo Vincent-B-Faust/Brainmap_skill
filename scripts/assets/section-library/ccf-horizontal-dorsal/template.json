@@ -1,0 +1,26 @@
+{
+  "id": "ccf-horizontal-dorsal",
+  "plane": "horizontal",
+  "kind": "volume-reconstruction",
+  "view": {
+    "plane": "horizontal",
+    "position_um": 2500
+  },
+  "atlas": "CCF2017",
+  "source_url": "https://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/annotation/ccf_2017/annotation_25.nrrd",
+  "source_sha256": "c620cbcc562183e4dcd40250d440130501781f74b41de35b1c1bdabace290c42",
+  "base_file": "base.svg",
+  "style": "gray-white-reference-v1",
+  "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+  "citation": "Allen Institute for Brain Science. Allen Mouse Brain Reference Atlas. https://atlas.brain-map.org/",
+  "modifications": "Nearest-neighbor 3D section, smoothed schematic background. These are new reconstructions, not downloaded 2D artwork.",
+  "coordinate_system": "CCF AP/DV/ML µm; rotation about section center, see atlas coordinate documentation",
+  "mask_to_canvas_scale": 1.3245033112582782,
+  "mask_to_canvas_offset": [
+    210.6754966887417,
+    -56.68874172185434
+  ],
+  "oblique": false,
+  "reuse": "Use brainmap-illustrate with the exact recorded view and CCF2017 atlas to place verified regions; do not transfer source-plate pixel coordinates.",
+  "base_sha256": "d49714c18a4d749e7c617f1246c7ef383d40469613ea2147f38123a00f875a7c"
+}

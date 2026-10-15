@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    {
+      "entry": "https://bioart.niaid.nih.gov/bioart/370",
+      "title": "Mouse Brain Coronal",
+      "species": "Mus musculus",
+      "plane": "coronal",
+      "coordinate_level": "not declared by source",
+      "license": "Public Domain",
+      "creator": "Ryan Kissinger, NIAID Visual & Medical Arts",
+      "source_svg": "https://bioart.niaid.nih.gov/api/bioarts/370/files/632537",
+      "file": "scripts/assets/bioart-370-632537.svg",
+      "sha256": "b4d558c69067ac3033bd26e9399a1cfe594b23a27a2863e6821b5807ec69533b",
+      "use": "Real coronal vector base; only overlay anatomical anchors after matching target level and reviewing a landmark mapping."
+    },
+    {
+      "entry": "https://bioart.niaid.nih.gov/bioart/369",
+      "title": "Mouse Brain",
+      "plane": "lateral external view",
+      "use": "Rejected as an internal sagittal section base."
+    }
+  ]
+}

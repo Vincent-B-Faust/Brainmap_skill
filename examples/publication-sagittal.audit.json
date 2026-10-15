@@ -1,0 +1,501 @@
+{
+  "renderer": "publication-illustration-v0.3.2",
+  "background": "allen-reconstruction",
+  "background_view": {
+    "plane": "sagittal",
+    "mode": "projection",
+    "position_um": 5700,
+    "hemisphere": "both",
+    "slab_um": [
+      5400,
+      6000
+    ]
+  },
+  "atlas": {
+    "name": "Allen Mouse Reference annotation mouse_2011",
+    "url": "https://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/annotation/mouse_2011/annotation_25.nrrd",
+    "sha256": "2a69a4a21f56251cebb1564b3ec172c6de8c855a3ca90edce29ff43ba21d7e08",
+    "note": "Entire figure uses this legacy annotation, including PBl descendants. No CCF2017/2011 mixing."
+  },
+  "ontology_url": "https://api.brain-map.org/api/v2/structure_graph_download/1.json",
+  "ontology_sha256": "b5f0d024d1df09ee18aef15093f55240f4a70b3924ee9689add612dadff80386",
+  "view": {
+    "plane": "sagittal",
+    "mode": "projection",
+    "position_um": 5700,
+    "hemisphere": "right",
+    "slab_um": [
+      5700,
+      11375
+    ]
+  },
+  "regions": [
+    {
+      "label": "POA",
+      "structures": [
+        {
+          "id": 523,
+          "name": "Medial preoptic area",
+          "acronym": "MPO"
+        },
+        {
+          "id": 452,
+          "name": "Median preoptic nucleus",
+          "acronym": "MEPO"
+        },
+        {
+          "id": 226,
+          "name": "Lateral preoptic area",
+          "acronym": "LPO"
+        }
+      ],
+      "custom_union": true,
+      "atlas_anchor_pixel_xy": [
+        209,
+        244
+      ],
+      "ccf_anchor_ap_dv_ml_um": [
+        5225.0,
+        6100.0,
+        5950.0
+      ],
+      "actual_structure_id": 523,
+      "anchor_membership_pass": true,
+      "drawing_center_xy": [
+        641.2260536398468,
+        711.2835249042146
+      ],
+      "glyph_radius_px": [
+        48.0,
+        27.0
+      ]
+    },
+    {
+      "label": "PVH",
+      "structures": [
+        {
+          "id": 38,
+          "name": "Paraventricular hypothalamic nucleus",
+          "acronym": "PVH"
+        }
+      ],
+      "custom_union": false,
+      "atlas_anchor_pixel_xy": [
+        243,
+        228
+      ],
+      "ccf_anchor_ap_dv_ml_um": [
+        6075.0,
+        5700.0,
+        5725.0
+      ],
+      "actual_structure_id": 110,
+      "anchor_membership_pass": true,
+      "drawing_center_xy": [
+        737.6245210727969,
+        665.919540229885
+      ],
+      "glyph_radius_px": [
+        48.0,
+        27.0
+      ]
+    },
+    {
+      "label": "DMH",
+      "structures": [
+        {
+          "id": 830,
+          "name": "Dorsomedial nucleus of the hypothalamus",
+          "acronym": "DMH"
+        }
+      ],
+      "custom_union": false,
+      "atlas_anchor_pixel_xy": [
+        275,
+        238
+      ],
+      "ccf_anchor_ap_dv_ml_um": [
+        6875.0,
+        5950.0,
+        5825.0
+      ],
+      "actual_structure_id": 668,
+      "anchor_membership_pass": true,
+      "drawing_center_xy": [
+        828.352490421456,
+        694.272030651341
+      ],
+      "glyph_radius_px": [
+        48.0,
+        27.0
+      ]
+    },
+    {
+      "label": "Arc",
+      "structures": [
+        {
+          "id": 223,
+          "name": "Arcuate hypothalamic nucleus",
+          "acronym": "ARH"
+        }
+      ],
+      "custom_union": false,
+      "atlas_anchor_pixel_xy": [
+        271,
+        281
+      ],
+      "ccf_anchor_ap_dv_ml_um": [
+        6775.0,
+        7025.0,
+        5700.0
+      ],
+      "actual_structure_id": 223,
+      "anchor_membership_pass": true,
+      "drawing_center_xy": [
+        817.0114942528736,
+        816.1877394636015
+      ],
+      "glyph_radius_px": [
+        48.0,
+        27.0
+      ]
+    },
+    {
+      "label": "LPB",
+      "structures": [
+        {
+          "id": 881,
+          "name": "Parabrachial nucleus, lateral division",
+          "acronym": "PBl"
+        }
+      ],
+      "custom_union": false,
+      "atlas_anchor_pixel_xy": [
+        414,
+        157
+      ],
+      "ccf_anchor_ap_dv_ml_um": [
+        10350.0,
+        3925.0,
+        6975.0
+      ],
+      "actual_structure_id": 891,
+      "anchor_membership_pass": true,
+      "drawing_center_xy": [
+        1222.4521072796933,
+        464.6168582375479
+      ],
+      "glyph_radius_px": [
+        48.0,
+        27.0
+      ]
+    },
+    {
+      "label": "RPA",
+      "structures": [
+        {
+          "id": 230,
+          "name": "Nucleus raphe pallidus",
+          "acronym": "RPA"
+        }
+      ],
+      "custom_union": false,
+      "atlas_anchor_pixel_xy": [
+        421,
+        282
+      ],
+      "ccf_anchor_ap_dv_ml_um": [
+        10525.0,
+        7050.0,
+        5700.0
+      ],
+      "actual_structure_id": 230,
+      "anchor_membership_pass": true,
+      "drawing_center_xy": [
+        1242.2988505747126,
+        819.0229885057471
+      ],
+      "glyph_radius_px": [
+        48.0,
+        27.0
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "LPB",
+      "to": "POA",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 300.0,
+      "score": 61.42836256160603,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          1187.7597148970196,
+          442.9788361695967
+        ],
+        [
+          911.5105409305182,
+          270.67922487136366
+        ],
+        [
+          717.7685230505693,
+          352.90144709358594
+        ],
+        [
+          647.9958214786228,
+          679.5865665615527
+        ]
+      ],
+      "terminal": "triangle"
+    },
+    {
+      "from": "LPB",
+      "to": "DMH",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 90.0,
+      "score": 20.20758215632109,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          1171.4557268370802,
+          464.2679947684059
+        ],
+        [
+          1045.771963608461,
+          463.4081989696807
+        ],
+        [
+          914.4054246557149,
+          539.9599231076118
+        ],
+        [
+          845.1541763921969,
+          664.1428596299914
+        ]
+      ],
+      "terminal": "triangle"
+    },
+    {
+      "from": "DMH",
+      "to": "PVH",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 80.0,
+      "score": 15.476497718941802,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          826.1240994702682,
+          664.3038771998453
+        ],
+        [
+          821.9718334227787,
+          608.4628022680532
+        ],
+        [
+          791.7291769732257,
+          599.0119721275679
+        ],
+        [
+          760.642543096308,
+          637.454709422108
+        ]
+      ],
+      "terminal": "triangle"
+    },
+    {
+      "from": "DMH",
+      "to": "RPA",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": -130.0,
+      "score": 27.54505528575147,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          867.8252273572238,
+          675.6288226165963
+        ],
+        [
+          1003.8462349108773,
+          611.3852930877257
+        ],
+        [
+          1141.8283549619628,
+          652.9689457058611
+        ],
+        [
+          1224.245378721952,
+          789.1848557341158
+        ]
+      ],
+      "terminal": "triangle"
+    },
+    {
+      "from": "POA",
+      "to": "DMH",
+      "kind": "inhibitory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": -90,
+      "score": 738.0161801168153,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          657.3418016319615,
+          682.9611456722364
+        ],
+        [
+          695.4533154232231,
+          615.98263823783
+        ],
+        [
+          757.8287943504262,
+          610.3121401535388
+        ],
+        [
+          804.6310612880792,
+          666.0311881622612
+        ]
+      ],
+      "terminal": "perpendicular_bar"
+    },
+    {
+      "from": "POA",
+      "to": "RPA",
+      "kind": "inhibitory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "bend_px": 35,
+      "score": 1391.4531357841179,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          684.3985446004383,
+          726.9275419514144
+        ],
+        [
+          835.4084840589379,
+          781.6476198209496
+        ],
+        [
+          1035.7660830372267,
+          817.5607743547938
+        ],
+        [
+          1189.3027774113218,
+          818.6477860182754
+        ]
+      ],
+      "terminal": "perpendicular_bar"
+    },
+    {
+      "from": "POA",
+      "to": "Arc",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "color": "#657178",
+      "bend_px": 40.0,
+      "score": 8.554155202291001,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          656.8483454395626,
+          739.7080234836017
+        ],
+        [
+          679.3229001316857,
+          780.6000997620789
+        ],
+        [
+          737.9180470026946,
+          815.5681712818745
+        ],
+        [
+          764.016301369782,
+          815.7726085464852
+        ]
+      ],
+      "terminal": "triangle"
+    },
+    {
+      "from": "Arc",
+      "to": "POA",
+      "kind": "excitatory",
+      "evidence": "hypothesis",
+      "source": "Synthetic layout example; not biological evidence.",
+      "color": "#657178",
+      "bend_px": -65,
+      "score": 1273.2990644653541,
+      "node_intrusions": [],
+      "self_intrusions": 0,
+      "crossings": 0,
+      "near_overlap_samples": 0,
+      "outside_samples": 0,
+      "control_xy": [
+        [
+          769.5694969078957,
+          826.9497620776448
+        ],
+        [
+          725.1066092657134,
+          837.0359858681675
+        ],
+        [
+          666.5114623947045,
+          802.0679143483719
+        ],
+        [
+          649.9970551279204,
+          742.7748099622653
+        ]
+      ],
+      "terminal": "triangle"
+    }
+  ],
+  "registration": null,
+  "background_smoothing": "Artistically simplified background: Gaussian sigma 4.5 voxels, equal-arclength low-pass sampling and 32 closed cubic Bezier segments. Internal shapes use 12-24 segments. Unassigned islands omitted; ROI anchors and masks remain unsmoothed.",
+  "visual_style": "Reference-inspired gray outlined brain, white internal cues, schematic cerebellar lobules/arbor inside atlas CB bounding box, higher-contrast pastel nodes and stronger circuit strokes. Decorative cerebellar curves are not atlas parcel boundaries.",
+  "claims": {
+    "anchor_membership": "verified",
+    "glyph_is_region_boundary": false,
+    "arrow_is_axon_trajectory": false,
+    "crossings": 0
+  }
+}

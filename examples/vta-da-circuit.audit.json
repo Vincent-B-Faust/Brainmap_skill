@@ -1,0 +1,527 @@
+{
+  "renderer": "plate-library-v0.4.0",
+  "template": {
+    "id": "allen-2-100883900",
+    "species": "Mus musculus",
+    "age": "P56",
+    "plane": "sagittal",
+    "atlas_id": 2,
+    "atlas_name": "Mouse P56 Sagittal",
+    "image_id": 100883900,
+    "section_number": 180,
+    "source_url": "https://api.brain-map.org/api/v2/svg_download/100883900?groups=28",
+    "source_sha256": "da87f6170f2bcf940fad11d0c2c1e2c6b92d3bd0d711355ca31966836f8797db",
+    "source_file": "source.svg",
+    "base_file": "base.svg",
+    "license": "Allen Institute Terms of Use; research/noncommercial use; source rights retained",
+    "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+    "citation": "Allen Institute for Brain Science. Allen Mouse Brain Reference Atlas. https://atlas.brain-map.org/",
+    "coordinate_system": "original plate SVG pixels; not volumetric CCF or Bregma",
+    "hemisphere_note": "As published; unilateral plates are not mirrored to invent a full section",
+    "source_size": [
+      15040.0,
+      8880.0
+    ],
+    "mask_width": 1000,
+    "mask_to_canvas_scale": 1.0065359477124183,
+    "mask_to_canvas_offset": [
+      7.725490196078454,
+      42.06535947712416
+    ],
+    "source_structure_ids": [
+      4,
+      8,
+      15,
+      35,
+      38,
+      50,
+      56,
+      83,
+      84,
+      88,
+      100,
+      107,
+      115,
+      127,
+      128,
+      129,
+      132,
+      140,
+      145,
+      146,
+      159,
+      160,
+      168,
+      169,
+      171,
+      173,
+      179,
+      181,
+      186,
+      189,
+      202,
+      212,
+      214,
+      219,
+      220,
+      227,
+      228,
+      236,
+      244,
+      250,
+      258,
+      264,
+      266,
+      274,
+      287,
+      294,
+      299,
+      302,
+      304,
+      307,
+      310,
+      313,
+      330,
+      342,
+      351,
+      352,
+      354,
+      362,
+      363,
+      366,
+      391,
+      395,
+      399,
+      407,
+      415,
+      422,
+      430,
+      431,
+      434,
+      438,
+      442,
+      446,
+      454,
+      458,
+      465,
+      473,
+      476,
+      481,
+      486,
+      489,
+      491,
+      492,
+      495,
+      502,
+      504,
+      507,
+      512,
+      515,
+      516,
+      523,
+      525,
+      531,
+      542,
+      549,
+      572,
+      574,
+      581,
+      596,
+      599,
+      606,
+      610,
+      614,
+      632,
+      634,
+      644,
+      651,
+      653,
+      679,
+      685,
+      688,
+      693,
+      698,
+      739,
+      741,
+      749,
+      757,
+      771,
+      773,
+      795,
+      830,
+      839,
+      872,
+      880,
+      898,
+      930,
+      931,
+      946,
+      947,
+      953,
+      980,
+      1004,
+      1009,
+      1034,
+      1039,
+      1042,
+      1048,
+      1053,
+      1067,
+      1075,
+      1093,
+      1097,
+      1113,
+      10703,
+      10704,
+      10705,
+      10707,
+      10708,
+      10710,
+      10711,
+      10713,
+      10720,
+      10722,
+      10723,
+      10725,
+      10726,
+      10728,
+      10729,
+      10731,
+      10732,
+      10734,
+      10735,
+      10737
+    ],
+    "context_layers": [
+      {
+        "query": "CTX",
+        "source_structure_ids": [
+          84,
+          107,
+          132,
+          159,
+          160,
+          168,
+          171,
+          179,
+          212,
+          219,
+          220,
+          227,
+          228,
+          236,
+          244,
+          264,
+          274,
+          299,
+          304,
+          330,
+          352,
+          363,
+          391,
+          399,
+          407,
+          415,
+          430,
+          431,
+          434,
+          438,
+          442,
+          446,
+          454,
+          476,
+          486,
+          492,
+          495,
+          502,
+          504,
+          507,
+          516,
+          542,
+          572,
+          606,
+          610,
+          632,
+          644,
+          688,
+          698,
+          739,
+          947,
+          1034,
+          1042,
+          1053,
+          1067,
+          1075,
+          10703,
+          10704
+        ]
+      },
+      {
+        "query": "HPF",
+        "source_structure_ids": [
+          391,
+          399,
+          407,
+          415,
+          431,
+          438,
+          446,
+          454,
+          486,
+          495,
+          502,
+          504,
+          632,
+          10703,
+          10704
+        ]
+      },
+      {
+        "query": "CB",
+        "source_structure_ids": [
+          512,
+          10705,
+          10707,
+          10708,
+          10710,
+          10711,
+          10713,
+          10720,
+          10722,
+          10723,
+          10725,
+          10726,
+          10728,
+          10729,
+          10731,
+          10732,
+          10734,
+          10735,
+          10737
+        ]
+      },
+      {
+        "query": "LING",
+        "source_structure_ids": [
+          10705,
+          10707
+        ]
+      },
+      {
+        "query": "CENT2",
+        "source_structure_ids": [
+          10708,
+          10710
+        ]
+      },
+      {
+        "query": "CENT3",
+        "source_structure_ids": [
+          10711,
+          10713
+        ]
+      },
+      {
+        "query": "CUL",
+        "source_structure_ids": [
+          10720,
+          10722
+        ]
+      },
+      {
+        "query": "DEC",
+        "source_structure_ids": [
+          10723,
+          10725
+        ]
+      },
+      {
+        "query": "FOTU",
+        "source_structure_ids": [
+          10726,
+          10728
+        ]
+      },
+      {
+        "query": "PYR",
+        "source_structure_ids": [
+          10729,
+          10731
+        ]
+      },
+      {
+        "query": "UVU",
+        "source_structure_ids": [
+          10732,
+          10734
+        ]
+      },
+      {
+        "query": "NOD",
+        "source_structure_ids": [
+          10735,
+          10737
+        ]
+      },
+      {
+        "query": "fiber tracts",
+        "source_structure_ids": [
+          1009
+        ]
+      },
+      {
+        "query": "VS",
+        "source_structure_ids": [
+          129,
+          140,
+          145
+        ]
+      }
+    ],
+    "style": "gray-white-reference-v1",
+    "modifications": "Source paths rasterized only for masks, simplified to closed cubic vector background; small islands omitted. Original source.svg unchanged. Placement QA uses unsmoothed source-path masks.",
+    "base_sha256": "25371df262242e74b6994bccfe4899b54285079b85aed67b0aad52c48127a342"
+  },
+  "regions": [
+    {
+      "label": "VTA DA",
+      "source_structure_ids": [
+        749
+      ],
+      "source_mask_anchor_xy": [
+        607,
+        338
+      ],
+      "source_svg_anchor_xy": [
+        9136.8,
+        5091.04
+      ],
+      "drawing_center_xy": [
+        618.6928104575163,
+        382.27450980392155
+      ],
+      "anchor_membership_pass": true,
+      "ccf_coordinate": null
+    },
+    {
+      "label": "NAc",
+      "source_structure_ids": [
+        56
+      ],
+      "source_mask_anchor_xy": [
+        326,
+        376
+      ],
+      "source_svg_anchor_xy": [
+        4910.56,
+        5662.56
+      ],
+      "drawing_center_xy": [
+        335.85620915032683,
+        420.5228758169934
+      ],
+      "anchor_membership_pass": true,
+      "ccf_coordinate": null
+    },
+    {
+      "label": "PL",
+      "source_structure_ids": [
+        84,
+        132,
+        171,
+        304,
+        363
+      ],
+      "source_mask_anchor_xy": [
+        215,
+        216
+      ],
+      "source_svg_anchor_xy": [
+        3241.12,
+        3256.16
+      ],
+      "drawing_center_xy": [
+        224.13071895424838,
+        259.4771241830065
+      ],
+      "anchor_membership_pass": true,
+      "ccf_coordinate": null
+    }
+  ],
+  "connections": [
+    {
+      "from": "VTA DA",
+      "to": "PL",
+      "kind": "projection",
+      "evidence": "published",
+      "source": "VTA DA projection to the prelimbic component of medial PFC; https://doi.org/10.1016/j.biopsych.2017.06.009 ; schematic pathway, not a functional activation sign",
+      "color": "#B58C55",
+      "bend_px": 170,
+      "control_xy": [
+        [
+          609.3470438112535,
+          358.8239784213373
+        ],
+        [
+          537.6902065475097,
+          179.02161713489207
+        ],
+        [
+          406.16950937975366,
+          138.08915526125375
+        ],
+        [
+          251.3949048720349,
+          241.2966905230745
+        ]
+      ],
+      "terminal": "axon_boutons",
+      "node_intrusions": [],
+      "crossings": 0
+    },
+    {
+      "from": "VTA DA",
+      "to": "NAc",
+      "kind": "projection",
+      "evidence": "published",
+      "source": "VTA DA projection to nucleus accumbens; https://doi.org/10.1016/j.neuron.2011.03.025 ; anatomical target shown broadly as ACB, not a shell-specific reconstruction",
+      "color": "#B58C55",
+      "bend_px": 70,
+      "control_xy": [
+        [
+          586.5073415429222,
+          364.6947395768765
+        ],
+        [
+          515.0331383513635,
+          325.6553807717297
+        ],
+        [
+          420.75427124896703,
+          338.40483610942033
+        ],
+        [
+          357.7485734407265,
+          399.3473861102562
+        ]
+      ],
+      "terminal": "axon_boutons",
+      "node_intrusions": [],
+      "crossings": 0
+    }
+  ],
+  "claims": {
+    "source_path_anchor_membership": "verified in unsmoothed rendered source paths",
+    "ccf_registration": false,
+    "glyph_is_region_boundary": false,
+    "arrow_is_axon_trajectory": false,
+    "crossings": 0
+  },
+  "dopamine_interpretation": {
+    "VTA_DA": "Conceptual DA neuronal population within VTA; anatomical anchor is from the VTA region, not a DA-cell-specific spatial mask.",
+    "NAc": "Allen ACB; broad anatomical target, not a core/shell-specific segmentation.",
+    "PL": "Prelimbic area, a component of medial prefrontal cortex; not the entire mPFC.",
+    "functional_sign": "Dopaminergic modulation depends on cells/receptors; projection boutons are not an excitation or inhibition symbol."
+  },
+  "cerebellar_texture": "Actual source-path lobules are shaded; white branching paths come from source fiber-tract annotations. No random fan pattern or invented lobular geometry."
+}

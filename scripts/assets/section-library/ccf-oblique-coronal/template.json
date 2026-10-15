@@ -1,0 +1,31 @@
+{
+  "id": "ccf-oblique-coronal",
+  "plane": "coronal",
+  "kind": "volume-reconstruction",
+  "view": {
+    "plane": "coronal",
+    "position_um": 6500,
+    "rotation_deg_ap_dv_ml": [
+      0,
+      15,
+      0
+    ]
+  },
+  "atlas": "CCF2017",
+  "source_url": "https://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/annotation/ccf_2017/annotation_25.nrrd",
+  "source_sha256": "c620cbcc562183e4dcd40250d440130501781f74b41de35b1c1bdabace290c42",
+  "base_file": "base.svg",
+  "style": "gray-white-reference-v1",
+  "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+  "citation": "Allen Institute for Brain Science. Allen Mouse Brain Reference Atlas. https://atlas.brain-map.org/",
+  "modifications": "Nearest-neighbor 3D section, smoothed schematic background. These are new reconstructions, not downloaded 2D artwork.",
+  "coordinate_system": "CCF AP/DV/ML µm; rotation about section center, see atlas coordinate documentation",
+  "mask_to_canvas_scale": 2.097902097902098,
+  "mask_to_canvas_offset": [
+    -113.17482517482517,
+    14.825174825174827
+  ],
+  "oblique": true,
+  "reuse": "Use brainmap-illustrate with the exact recorded view and CCF2017 atlas to place verified regions; do not transfer source-plate pixel coordinates.",
+  "base_sha256": "b239cbdfb337a5d24476bb4611cc8517e6d6f3781a331de2ce41e98ac5953d01"
+}

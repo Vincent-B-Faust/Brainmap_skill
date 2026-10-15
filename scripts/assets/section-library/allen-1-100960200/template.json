@@ -1,0 +1,111 @@
+{
+  "id": "allen-1-100960200",
+  "species": "Mus musculus",
+  "age": "P56",
+  "plane": "coronal",
+  "atlas_id": 1,
+  "atlas_name": "Mouse P56 Coronal",
+  "image_id": 100960200,
+  "section_number": 421,
+  "source_url": "https://api.brain-map.org/api/v2/svg_download/100960200?groups=28",
+  "source_sha256": "e930576c9aab9a86064a16141fd43b7bcffc6d37b8b0f00ff85db673f79d11b3",
+  "source_file": "source.svg",
+  "base_file": "base.svg",
+  "license": "Allen Institute Terms of Use; research/noncommercial use; source rights retained",
+  "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+  "citation": "Allen Institute for Brain Science. Allen Mouse Brain Reference Atlas. https://atlas.brain-map.org/",
+  "coordinate_system": "original plate SVG pixels; not volumetric CCF or Bregma",
+  "hemisphere_note": "As published; unilateral plates are not mirrored to invent a full section",
+  "source_size": [
+    8704.0,
+    6911.0
+  ],
+  "mask_width": 1000,
+  "mask_to_canvas_scale": 0.8547008547008547,
+  "mask_to_canvas_offset": [
+    -70.05128205128199,
+    11.794871794871824
+  ],
+  "source_structure_ids": [
+    7,
+    8,
+    101,
+    105,
+    114,
+    122,
+    123,
+    140,
+    162,
+    206,
+    230,
+    238,
+    313,
+    350,
+    354,
+    358,
+    460,
+    512,
+    534,
+    604,
+    616,
+    621,
+    771,
+    795,
+    811,
+    820,
+    828,
+    860,
+    868,
+    875,
+    880,
+    883,
+    891,
+    898,
+    915,
+    1009,
+    1093,
+    10672,
+    10674,
+    10687,
+    10689,
+    10690,
+    10692,
+    10708,
+    10710,
+    10720,
+    10722
+  ],
+  "context_layers": [
+    {
+      "query": "CB",
+      "source_structure_ids": [
+        512,
+        10672,
+        10674,
+        10687,
+        10689,
+        10690,
+        10692,
+        10708,
+        10710,
+        10720,
+        10722
+      ]
+    },
+    {
+      "query": "fiber tracts",
+      "source_structure_ids": [
+        1009
+      ]
+    },
+    {
+      "query": "VS",
+      "source_structure_ids": [
+        140
+      ]
+    }
+  ],
+  "style": "gray-white-reference-v1",
+  "modifications": "Source paths rasterized only for masks, simplified to closed cubic vector background; small islands omitted. Original source.svg unchanged. Placement QA uses unsmoothed source-path masks.",
+  "base_sha256": "c7a5cb2e3b6fce736e70a012fdfdddfcbc5cc18583ba9ec8f77a97acbbed4343"
+}
