@@ -41,7 +41,9 @@ brainmap-preview outputs/vta/figure.svg --png outputs/vta/figure.png --pdf outpu
 
 优先选择 `all_targets_delineated: true`。更多板片使用 `brainmap-library fetch`；水平面、斜切面、指定 CCF 层面或投影需求再使用 `brainmap-illustrate`。`brainmap render` 是空间 QA 工具。
 
-任何能执行 Python/终端命令的 AI 宿主均可按 [AI_USAGE.md](AI_USAGE.md) 调用。纯聊天模型可准备 JSON，实际文件仍需执行环境。
+未指定层面的 sagittal 图默认正中切开（CCF ML 5700 µm）；明确侧位参数继续保留。离面脑区只能作为已记录深度的投影定位，不作为同一切片中的结构。
+
+能执行 Python/终端命令的 AI 宿主可按 [AI_USAGE.md](AI_USAGE.md) 调用；具备图像生成工具的宿主可使用[图像生成模式](references/image-generation.md)，以核验后的图谱参考图约束生成结果。
 
 ## English
 
@@ -71,7 +73,9 @@ brainmap-preview outputs/vta/figure.svg --png outputs/vta/figure.png --pdf outpu
 
 Prefer `all_targets_delineated: true`. Retrieve additional plates with `brainmap-library fetch`. Use `brainmap-illustrate` when horizontal/oblique, explicit CCF or projection views are needed. `brainmap render` is a spatial QA tool.
 
-Any Python-capable AI host can follow [AI_USAGE.md](AI_USAGE.md). Chat-only models can prepare JSON requests; file generation requires an execution environment.
+An unspecified sagittal view defaults to a midsagittal cut (CCF ML 5700 µm); explicit lateral offsets are preserved. Off-plane targets require recorded projection depths and are not presented as intersecting one slice.
+
+Python-capable AI hosts can follow [AI_USAGE.md](AI_USAGE.md). Image-capable hosts can use [image-generation mode](references/image-generation.md), grounded in verified atlas reference images.
 
 ## 说明 / Notes
 

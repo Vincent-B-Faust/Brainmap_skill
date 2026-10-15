@@ -52,6 +52,17 @@ class LibraryChecks(unittest.TestCase):
             self.assertEqual(e['source_sha256'],lib.atlas.ANNOTATION_HASH)
         self.assertEqual(sum(e['oblique'] for e in catalog['reconstructions']),2)
 
+    def test_bundled_image_reference_is_midline_without_target_labels(self):
+        assets=Path(__file__).parent/'assets'
+        record=lib.read_json(assets/'midsagittal-reference.json')
+        self.assertEqual(record['view'],{'plane':'sagittal','mode':'slice','position_um':5700,'hemisphere':'both'})
+        self.assertEqual(record['atlas']['sha256'],lib.atlas.ANNOTATION_HASH)
+        for kind in ('svg','png'):
+            self.assertEqual(lib.digest(assets/f'midsagittal-reference.{kind}'),record[f'{kind}_sha256'])
+        root=lib.parse_svg((assets/'midsagittal-reference.svg').read_text())
+        self.assertFalse(any(e.tag.split('}')[-1] in ('text','image') for e in root.iter()))
+        self.assertFalse(any(e.get('id') in ('region-labels','region-node-labels','circuit-connections') for e in root.iter()))
+
     def test_da_projection_has_boutons_without_functional_arrow(self):
         request=lib.read_json(Path(__file__).parent.parent/'references'/'example-vta-da.json')
         with tempfile.TemporaryDirectory() as td:

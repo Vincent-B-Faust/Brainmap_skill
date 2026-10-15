@@ -5,6 +5,7 @@ Dependencies: numpy scipy matplotlib contourpy jsonschema. Downloads use curl wi
 No generative anatomy, approximate Bregma transform, or implicit acronym guessing.
 """
 import argparse
+import copy
 import datetime
 import gzip
 import hashlib
@@ -39,6 +40,7 @@ ALIASES = {"LPB": "PBl", "Arc": "ARH", "ARC": "ARH", "MnPO": "MEPO"}
 COLORS = ["#7c70bf", "#d6a34b", "#4d9cb3", "#ba667d", "#649756", "#cb7151", "#727bad"]
 RES = 25.0
 SHAPE = (528, 320, 456)
+MIDLINE_UM = SHAPE[2] * RES / 2
 
 
 def request_schema():
@@ -53,7 +55,9 @@ def validate_request(config):
         error = errors[0]
         path = ".".join(map(str,error.absolute_path)) or "request"
         raise ValueError(f"Invalid request at {path}: {error.message}")
+    config = copy.deepcopy(config)
     view = config["view"]
+    view.setdefault("position_um", MIDLINE_UM)
     if "slab_um" in view and view.get("mode","slice") != "projection":
         raise ValueError("slab_um requires mode=projection; it must not silently be ignored in a slice")
     if view.get("mode","slice") == "projection" and any(view.get("rotation_deg_ap_dv_ml",[0,0,0])):
@@ -75,7 +79,7 @@ def validate_request(config):
 
 def render_request(config, out, cache=None):
     """Validate and render a model-independent request; return its spatial audit."""
-    validate_request(config)
+    config = validate_request(config)
     if config.get("illustration"):
         raise ValueError("Illustration settings require brainmap-illustrate / illustrate_request; brainmap render is the atlas QA renderer")
     cache = Path(cache) if cache is not None else cache_default()

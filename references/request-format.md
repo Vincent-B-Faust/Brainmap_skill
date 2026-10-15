@@ -15,7 +15,7 @@ Use `brainmap schema` or [request.schema.json](../scripts/request.schema.json).
 }
 ```
 
-- `plane`: sagittal, coronal, horizontal. `position_um`: CCF µm on the fixed axis.
+- `plane`: sagittal, coronal, horizontal. `position_um`: CCF µm on the fixed axis. An orthogonal sagittal slice may omit it and defaults to the midsagittal plane, ML 5700 µm; explicit coordinates are preserved. Coronal, horizontal, rotated and projected requests still require `position_um`. Validation returns a normalized copy; the caller input is not mutated.
 - `mode`: slice or orthogonal projection. `slab_um`: inclusive projection depth range. `hemisphere`: both, left or right.
 - `rotation_deg_ap_dv_ml`: three explicit rotation angles; oblique depth projection is unsupported.
 - Regions use `structure` (exact acronym/ID) or an explicit `structures` union, optional label/color/fill_color. Parent masks include descendants. Labels must be unique.
@@ -27,3 +27,5 @@ Use `brainmap schema` or [request.schema.json](../scripts/request.schema.json).
 Output audit/masks establish spatial placement, not biological connectivity. Coordinate and source records remain outside the visible diagram.
 
 All numeric input must be finite. Render bundles are staged before publication; a failed render leaves an existing output intact. A successful render replaces the output directory, so use a dedicated directory and export previews afterward. NPZ masks use stable `region_0`, `region_1`, … keys; native-plate audits map each `mask_key` to its display label.
+
+For unspecified sagittal circuit views, keep a midsagittal backdrop. If targets lie at different depths, record an explicit projection/slab and verify each anchor at its own depth; do not describe the result as a single slice. A literal midline slice must not acquire missing lateral targets. Image-tool execution follows [image-generation.md](image-generation.md).

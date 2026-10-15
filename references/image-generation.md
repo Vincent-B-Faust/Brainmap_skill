@@ -1,0 +1,18 @@
+# Image-generation mode
+
+Apply this skill when the host uses an image tool to create or restyle a mouse brain schematic. Use the same anatomical and diagram-only rules as the vector workflow. The host must make the skill and reference assets available to the model; a local skill cannot register itself with every standalone image interface.
+
+## Reference and generation
+
+1. Resolve structure IDs, view, hemisphere and connections first. Unspecified sagittal views use a midsagittal cut with corpus-callosum/ventricular and vermis context; do not substitute an external lateral view. Explicit offsets and rotations override the default.
+2. The bundled `scripts/assets/midsagittal-reference.png` and `.svg` provide a verified midline background; `.json` records source hash, view and pixel transform. They contain no preverified target anchors. Prefer a verified matching library plate. If no midsagittal plate is established, prepare an Allen midsagittal reference at CCF ML 5700 µm. Missing targets in a literal slice remain absent. For a circuit overview spanning depths, prepare a declared projection with separate verified target anchors on a midline backdrop; keep this disclosure in audit/notes.
+3. Supply the actual reference image plus its canvas dimensions, unsmoothed masks or anchor locations, exact labels and directed connection list. Coordinates belong to that reference image; do not transfer them across unrelated views. Without an atlas-verified reference, request one or produce a clearly identified draft without claiming precise placement.
+4. Invoke the host's available image-generation/editing tool with the reference. Preserve its pose, orientation, anatomical landmarks and registered target positions. Stylize pale tissue, uniform gray outlines and source-derived cerebellar folds/white matter. Keep the visible canvas to requested regions and connections. Add no explanatory text, source badges, legends or coordinates.
+5. Preserve specified activation triangles, inhibition bars and unsigned projection boutons. Do not assign a functional sign to an unspecified projection. Model-generated routes are schematic, not traced axons.
+6. Compare the generated result with the reference at the same aspect ratio and orientation. Check every label, target location, endpoint direction, terminal shape and cerebellar texture. If generation warps geometry, restore placement from the verified overlay or regenerate. Record generation and verification limitations in notes; do not call raster output editable SVG or claim voxel-verified anatomy from visual inspection alone.
+
+For strict placement and readable labels, generate/restyle the tissue background and then compose verified region glyphs and routes as a separate deterministic overlay when the host supports it. Retain the verified vector file alongside any generated raster image when both are available. Follow the host's image tool rules; no particular AI vendor or model API is required by this skill.
+
+## Prompt skeleton
+
+> Create a clean adult mouse brain circuit schematic using the attached atlas-verified reference. View: {midsagittal cut unless explicitly overridden}. Preserve the reference orientation, landmarks and region anchors: {exact labels and reference-canvas coordinates}. Connections: {source → target, specified functional sign or unsigned projection}. Use pale-gray tissue, smooth uniform gray outlines, muted journal colors, source-derived cerebellar lobules and white-matter branches. Only the brain, requested region labels and connections appear in the image. Do not invent missing structures, move regions for layout, change endpoint direction or add explanatory text. Projection/depth and source information belongs in accompanying notes.

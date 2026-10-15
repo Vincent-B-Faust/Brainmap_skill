@@ -1,15 +1,15 @@
 ---
 name: allen-mouse-brain-schematic
-description: Create atlas-grounded adult mouse brain schematics and circuit diagrams with editable SVG, verified anchors, uniform outlines and source-derived cerebellar texture. Supports sagittal, coronal, horizontal and oblique views. Not for human anatomy or surgical targeting.
+description: Create atlas-grounded adult mouse brain schematics in vector or image-generation mode (图像生成). Use for brain-region diagrams and circuit illustrations, including image-generation prompts requiring accurate anatomy. Sagittal views default to a midsagittal cut. Supports coronal, horizontal and oblique views; not human anatomy or surgical targeting.
 ---
 
 # Mouse brain schematics
 
 ## Workflow
 
-1. Resolve species, regions, plane, position, hemisphere and connections. Use adult mouse data; clarify ambiguous region definitions rather than guessing. Unspecified positions may be chosen from verified target coverage.
-2. **Use `brainmap-library` first.** `choose` ranks native plates by actual structure paths; `illustrate` places verified source-path anchors. Prefer full target coverage. Fetch additional indexed plates when needed. See [section-library.md](references/section-library.md).
-3. Use `brainmap-illustrate` for required CCF, horizontal/oblique or projection views, or when suitable plates are unavailable. Respect explicit source requirements and reconstruction preferences. Use one annotation version throughout. See [atlas-and-coordinates.md](references/atlas-and-coordinates.md).
+1. Resolve species, regions, plane, position, hemisphere and connections. Use adult mouse data; clarify ambiguous region definitions rather than guessing. For sagittal views without an explicit offset or rotation, default to a midsagittal cut (CCF ML 5700 µm), not the lateral surface or whichever lateral plate covers most targets. Choose unspecified positions in other planes from verified target coverage.
+2. **Use `brainmap-library` first.** `choose` ranks native plates by actual structure paths; `illustrate` places verified source-path anchors. For the default sagittal view, use only a plate verified as midsagittal; section numbers alone do not establish its ML coordinate. Otherwise use an Allen midsagittal reconstruction. Prefer full target coverage within the requested view and fetch indexed plates when appropriate. See [section-library.md](references/section-library.md).
+3. Use `brainmap-illustrate` for required CCF, horizontal/oblique or projection views, or when suitable plates are unavailable. Respect explicit source requirements and reconstruction preferences. Use one annotation version throughout. An off-midline target is absent from a true midline slice; use a declared depth projection onto a midline backdrop for an overview circuit, with actual atlas anchors and depth range recorded outside the canvas. For a literal slice request, report absence instead of projecting automatically. See [atlas-and-coordinates.md](references/atlas-and-coordinates.md).
 4. Build a reproducible JSON request; see [request-format.md](references/request-format.md). Native plate pixels and CCF coordinates are separate spaces. Never invent Bregma transforms, missing structures or parent-to-child substitutions.
 5. Draw only requested connections supported by input or published evidence. Triangles mean specified activation, T bars inhibition. Native `kind:projection` uses rounded boutons without assigning a functional sign. Separate bidirectional curves and avoid node collisions.
 6. Check source/voxel membership, masks, source version and actual SVG/PNG preview. Save SVG, preview, request and audit; add PDF when needed. Use a dedicated output directory: successful renders replace the bundle; export previews afterward. `brainmap render` is QA, not the final illustration.
@@ -22,6 +22,10 @@ description: Create atlas-grounded adult mouse brain schematics and circuit diag
 - Derive cerebellar folds and white branches from source lobules and fiber paths. Avoid random or generic fan textures.
 - Store source, reconstruction/projection status, coordinates and evidence in audit, SVG metadata or figure-notes.md, outside the visible canvas. Gallery and QA views are reference material, not final artwork.
 - Follow [illustration-design.md](references/illustration-design.md). Keep the response to the diagram and necessary links.
+
+## Image-generation mode
+
+This skill also applies when an image-generation tool or image-capable host is producing the figure. Load [image-generation.md](references/image-generation.md): prepare an atlas-verified reference and exact labels/connections, then use the host's image tool for styling. When image-generation mode is requested and a tool is available, invoke it rather than returning only a prompt. Default to the same midsagittal cut and diagram-only appearance. Check the generated result against the reference; image generation does not establish anatomical accuracy or create editable vectors by itself.
 
 ## Execution and limits
 

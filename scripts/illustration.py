@@ -235,7 +235,7 @@ def bioart_viewport(root, matrix):
 
 
 def draw(request,out,cache,profile=None):
-    atlas.validate_request(request)
+    request=atlas.validate_request(request)
     if profile is not None:finite_json(profile)
     style=request.get("illustration",{})
     background=style.get("background","allen-reconstruction")
@@ -251,10 +251,12 @@ def draw(request,out,cache,profile=None):
     background_mask=s["brain"]
     background_view=copy.deepcopy(request["view"])
     if background=="allen-reconstruction" and s["plane"]=="sagittal" and s["mode"]=="projection":
-        # A thin medial slab avoids treating unassigned midline voxels in the
-        # historical volume as missing tissue. It remains a reconstruction.
-        background_view.update(mode="projection",position_um=5700,hemisphere="both",slab_um=[5400,6000])
+        # Off-plane target anchors remain depth-projected; the anatomical
+        # backdrop is the actual midsagittal slice, not a silently widened slab.
+        background_view.update(mode="slice",position_um=atlas.MIDLINE_UM,hemisphere="both")
+        background_view.pop("slab_um",None)
         background_mask=atlas.section(volume,background_view,[])["brain"]
+        if not background_mask.any():raise ValueError("No midsagittal tissue for the projection background")
     bb=np.where(background_mask);xmin,xmax=int(bb[1].min()),int(bb[1].max());ymin,ymax=int(bb[0].min()),int(bb[0].max())
     width=1600;scale=1480/max(1,xmax-xmin);height=(ymax-ymin)*scale+200
     offset=np.array([60-xmin*scale,45-ymin*scale])
@@ -276,30 +278,20 @@ def draw(request,out,cache,profile=None):
     elif background=="allen-reconstruction":
         map_xy=lambda xy:np.array(xy)*scale+offset
         art_mask=background_mask.copy()
-        if s["plane"]=="sagittal" and s["mode"]=="projection":
-            cb_region=atlas.prepare_regions({"regions":[{"structure":"CB"}]},ontology)
-            cb_mask=atlas.section(volume,background_view,cb_region)["masks"][0]
-            art_mask &= ~ndimage.binary_dilation(cb_mask,iterations=2)
         background_path=smooth_path(ndimage.binary_fill_holes(art_mask),4.5,32)
         cb_svg=""
         background_svg=f'<defs><linearGradient id="brain-tissue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2F2F2"/><stop offset="1" stop-color="#F2F2F2"/></linearGradient><clipPath id="tissue-clip"><path d="{background_path}"/></clipPath></defs><g id="allen-reconstructed-background" transform="translate({offset[0]},{offset[1]}) scale({scale})"><path d="{background_path}" fill="url(#brain-tissue)" stroke="#606162" stroke-width="{5/scale}" fill-rule="evenodd"/><g clip-path="url(#tissue-clip)">'
         # Show a small number of real atlas landmarks, not the complete parcellation.
-        context_queries=["CTX","CB","arb","cc"] if s["plane"]=="sagittal" else ["cc"]
-        cb_ids=set(atlas.descendants(atlas.resolve("CB",ontology)[0]))
-        molecular=[n["acronym"] for n in ontology.values() if n["id"] in cb_ids and n["name"].lower().endswith("molecular layer")]
-        if s["plane"]=="sagittal" and s["mode"]!="projection":context_queries+=molecular
+        lobules=["LING","CENT2","CENT3","CUL","DEC","FOTU","PYR","UVU","NOD"]
+        context_queries=["CTX","CB"]+lobules+["arb","cc"] if s["plane"]=="sagittal" else ["cc"]
         context_regions=atlas.prepare_regions({"regions":[{"structure":q} for q in context_queries]},ontology)
-        context_view=copy.deepcopy(request["view"])
-        if s["plane"]=="sagittal" and s["mode"]=="projection":
-            context_view.update(mode="slice",position_um=5500,hemisphere="both");context_view.pop("slab_um",None)
+        context_view=copy.deepcopy(background_view)
         ctx=atlas.section(volume,context_view,context_regions)
         if ctx["brain"].shape==s["brain"].shape:
             for query,mask in zip(context_queries,ctx["masks"]):
                 if mask.any():
-                    if query=="CB" and s["plane"]=="sagittal" and s["mode"]=="projection":
-                        cb_svg=cerebellum_schematic(mask,5/scale)
-                        continue
                     fill,stroke=("#E8ECE9","none") if query=="CB" else (("#F5F5F5","none") if query=="CTX" else ("#FFFFFF","none"))
+                    if query in lobules:fill="#E2E7E3" if lobules.index(query)%2==0 else "#ECEFEC"
                     labels,count=ndimage.label(mask);sizes=np.bincount(labels.ravel());sizes[0]=0
                     mask=sizes[labels]>=35
                     background_svg+=f'<path d="{smooth_path(mask,3 if query in ("CB","CTX") else 1.5,24 if query in ("CB","CTX") else 12)}" fill="{fill}" stroke="{stroke}" stroke-width="0.65" fill-rule="evenodd"/>'
@@ -369,7 +361,7 @@ def draw(request,out,cache,profile=None):
     parts.append('</g>')
     parts.append('<g id="figure-annotations">')
     caption=('Allen atlas reconstruction' if background=='allen-reconstruction' else 'NIH BioArt + Allen landmark mapping')
-    caption+=' · medial-slab background + depth-projected regions' if s['mode']=='projection' else ' · section schematic'
+    caption+=(' · midsagittal backdrop + depth-projected regions' if s['plane']=='sagittal' else ' · depth-projected regions') if s['mode']=='projection' else ' · section schematic'
     parts.append(f'<text x="60" y="{height-51:.2f}" font-family="Arial" font-size="16" fill="#687577">{esc(caption)}</text>')
     parts.append(f'<text x="60" y="{height-25:.2f}" font-family="Arial" font-size="13" fill="#7D8787">Atlas-derived anchor positions; node sizes and curves are schematic. Connection evidence is recorded in audit.json.</text>')
     # Compact semantic key; evidence status is kept separate from terminal shape.
@@ -377,7 +369,7 @@ def draw(request,out,cache,profile=None):
     parts.append(f'<path d="M1390,{height-54} h52 m0,-10 v20" fill="none" stroke="{INHIBITORY}" stroke-width="4"/><text x="1454" y="{height-48}" font-size="15" fill="#556369">Inhibition</text>')
     parts.append('</g>')
     audit={"renderer":"publication-illustration-v0.3.2","background":background,"background_view":background_view,"atlas":source,"ontology_url":atlas.URLS["structure_graph.json"],"ontology_sha256":atlas.digest(cache/"structure_graph.json"),"view":request["view"],"regions":entries,"connections":routes,"registration":profile_audit,
-           "background_smoothing":"Artistically simplified background: Gaussian sigma 4.5 voxels, equal-arclength low-pass sampling and 32 closed cubic Bezier segments. Internal shapes use 12-24 segments. Unassigned islands omitted; ROI anchors and masks remain unsmoothed.", "visual_style":"Reference-inspired gray outlined brain, white internal cues, schematic cerebellar lobules/arbor inside atlas CB bounding box, higher-contrast pastel nodes and stronger circuit strokes. Decorative cerebellar curves are not atlas parcel boundaries.","claims":{"anchor_membership":"verified","glyph_is_region_boundary":False,"arrow_is_axon_trajectory":False,"crossings":sum(r['crossings'] for r in routes)}}
+           "background_smoothing":"Artistically simplified background: Gaussian sigma 4.5 voxels, equal-arclength low-pass sampling and 32 closed cubic Bezier segments. Internal shapes use 12-24 segments. Unassigned islands omitted; ROI anchors and masks remain unsmoothed.", "visual_style":"Uniform gray brain outline, pale tissue and pastel nodes; cerebellar lobules and arbor vitae follow actual source annotation masks in the background view. Background smoothing is illustrative; ROI anchors remain unsmoothed.","claims":{"anchor_membership":"verified","glyph_is_region_boundary":False,"arrow_is_axon_trajectory":False,"crossings":sum(r['crossings'] for r in routes)}}
     parts.append('<metadata>'+esc(json.dumps(audit,ensure_ascii=False,allow_nan=False))+'</metadata></svg>')
     destination=Path(out)
     with staged_output(destination) as out:

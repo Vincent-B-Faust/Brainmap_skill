@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "brainmap-skill"
-version = "0.4.5"
+version = "0.4.6"
 description = "Model-independent, atlas-grounded mouse brain schematics with spatial audits"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -31,4 +31,4 @@ packages = ["brainmap_skill"]
 package-dir = {brainmap_skill = "scripts"}
 
 [tool.setuptools.package-data]
-brainmap_skill = ["request.schema.json", "assets/*.svg", "assets/section-library/*.json", "assets/section-library/*.svg", "assets/section-library/*/*.svg", "assets/section-library/*/*.json"]
+brainmap_skill = ["request.schema.json", "assets/*.svg", "assets/*.png", "assets/*.json", "assets/section-library/*.json", "assets/section-library/*.svg", "assets/section-library/*/*.svg", "assets/section-library/*/*.json"]

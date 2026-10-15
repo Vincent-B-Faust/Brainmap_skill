@@ -1,0 +1,46 @@
+{
+  "kind": "midsagittal-anatomical-reference",
+  "species": "Mus musculus",
+  "atlas": {
+    "name": "Allen CCF2017",
+    "url": "https://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/annotation/ccf_2017/annotation_25.nrrd",
+    "sha256": "c620cbcc562183e4dcd40250d440130501781f74b41de35b1c1bdabace290c42"
+  },
+  "view": {
+    "plane": "sagittal",
+    "mode": "slice",
+    "position_um": 5700,
+    "hemisphere": "both"
+  },
+  "canvas": {
+    "width": 1600.0,
+    "height": 897.32741617357,
+    "coordinate_system": "drawing pixels"
+  },
+  "atlas_pixel_to_canvas_svg_transform": "translate(4.5364891518737736,-39.65483234714003) scale(2.9191321499013805)",
+  "source_pixel_axes": {
+    "x": "AP voxel index",
+    "y": "DV voxel index",
+    "spacing_um": 25
+  },
+  "source_context": [
+    "CTX",
+    "CB",
+    "LING",
+    "CENT2",
+    "CENT3",
+    "CUL",
+    "DEC",
+    "FOTU",
+    "PYR",
+    "UVU",
+    "NOD",
+    "arb",
+    "cc"
+  ],
+  "scope": "Stylized background from the actual CCF midsagittal section; no target-region anchors or connectivity claims are included. Verify requested targets separately.",
+  "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+  "citation": "Allen Institute for Brain Science. Allen Mouse Brain Reference Atlas.",
+  "svg_sha256": "8ef2914ffc51d6f9ef622d8659176d7c2675aecf701d9b7b515f8515d6f5fced",
+  "png_sha256": "0edd376f770520d4e85c021d7a668a71a4c8a1f4777e0f694a35d43059b66a27"
+}

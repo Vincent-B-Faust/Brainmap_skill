@@ -7,7 +7,9 @@
   "properties": {
     "title": {"type": "string", "minLength": 1},
     "view": {
-      "type": "object", "additionalProperties": false, "required": ["position_um"],
+      "type": "object", "additionalProperties": false,
+      "description": "Orthogonal sagittal slices default to midsagittal CCF ML 5700 um; other views require position_um.",
+      "allOf": [{"if": {"properties": {"plane": {"const": "sagittal"}, "mode": {"const": "slice"}, "rotation_deg_ap_dv_ml": {"items": {"const": 0}}}}, "else": {"required": ["position_um"]}}],
       "properties": {
         "plane": {"enum": ["sagittal", "coronal", "horizontal"]},
         "mode": {"enum": ["slice", "projection"]},

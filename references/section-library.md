@@ -8,7 +8,7 @@ brainmap-library illustrate references/example-vta-da.json --out outputs/figure
 brainmap-library schema
 ```
 
-Prefer `all_targets_delineated: true`. Selection uses actual structure IDs and descendants; rendering verifies an interior point against unsmoothed source-path masks. Do not add targets absent from a plate.
+For a sagittal view with no specified offset, first require verified midsagittal provenance; never infer ML from the section number or silently select a lateral plate for better coverage. If no suitable midline plate is verified, use an Allen midsagittal reconstruction. Within the chosen view, prefer `all_targets_delineated: true`. Explicit `template_id` requests select that native plate and remain unchanged. Selection uses actual structure IDs and descendants; rendering verifies an interior point against unsmoothed source-path masks. Do not add targets absent from a plate.
 
 For more plates, copy `scripts/assets/section-library` to a writable directory:
 

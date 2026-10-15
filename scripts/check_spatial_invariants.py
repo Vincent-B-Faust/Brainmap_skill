@@ -79,6 +79,55 @@ class SpatialChecks(unittest.TestCase):
 
 
 class RequestChecks(unittest.TestCase):
+    def test_unspecified_sagittal_slice_defaults_to_midline_without_mutation(self):
+        for view in ({},{"plane":"sagittal"},{"plane":"sagittal","rotation_deg_ap_dv_ml":[0,0,0]}):
+            request={"view":view,"regions":[{"structure":"RPA"}]}
+            normalized=a.validate_request(request)
+            self.assertEqual(normalized["view"]["position_um"],5700)
+            self.assertNotIn("position_um",request["view"])
+        request={"view":{"plane":"sagittal","position_um":6300},"regions":[{"structure":"RPA"}]}
+        self.assertEqual(a.validate_request(request)["view"]["position_um"],6300)
+
+    def test_other_views_still_require_explicit_positions(self):
+        for view in ({"plane":"coronal"},{"plane":"horizontal"},
+                     {"plane":"sagittal","rotation_deg_ap_dv_ml":[0,10,0]},
+                     {"plane":"sagittal","mode":"projection","slab_um":[5700,6700]}):
+            with self.subTest(view=view),self.assertRaises(ValueError):
+                a.validate_request({"view":view,"regions":[{"structure":"RPA"}]})
+
+    def test_qa_entry_persists_the_resolved_midline_view(self):
+        import json,tempfile
+        from pathlib import Path
+        request={"view":{"plane":"sagittal"},"regions":[{"structure":"RPA"}]}
+        def output(config,volume,nodes,cache,out):
+            (out/"audit.json").write_text(json.dumps({"view":config["view"]}))
+        with tempfile.TemporaryDirectory() as td,patch.object(a,"load_volume",return_value=None),patch.object(a,"tree",return_value={}),patch.object(a,"make_output",side_effect=output):
+            report=a.render_request(request,Path(td))
+            self.assertEqual(report["view"]["position_um"],5700)
+            self.assertNotIn("position_um",request["view"])
+
+    def test_illustration_entry_samples_default_midline(self):
+        import illustration as art
+        request={"view":{"plane":"sagittal"},"regions":[{"structure":"RPA"}],
+                 "illustration":{"background":"allen-reconstruction","atlas":"ccf_2017","allow_reconstruction":True}}
+        with patch.object(art,"load_atlas",return_value=(None,{},{})),patch.object(a,"prepare_regions",return_value=[]),patch.object(a,"section",side_effect=ValueError("sampling reached")) as sample:
+            with self.assertRaisesRegex(ValueError,"sampling reached"):art.draw(request,"unused-output",a.cache_default())
+            self.assertEqual(sample.call_args.args[1]["position_um"],5700)
+            self.assertNotIn("position_um",request["view"])
+
+    def test_projection_backdrop_is_a_midline_slice_with_separate_target_depths(self):
+        import illustration as art
+        request={"view":{"plane":"sagittal","mode":"projection","position_um":6200,"slab_um":[5700,6700]},
+                 "regions":[{"structure":"RPA"}],"illustration":{"background":"allen-reconstruction","atlas":"ccf_2017","allow_reconstruction":True}}
+        mask=np.ones((5,5),bool)
+        first={"brain":mask,"masks":[mask],"plane":"sagittal","mode":"projection"}
+        with patch.object(art,"load_atlas",return_value=(None,{},{})),patch.object(a,"prepare_regions",return_value=[]),patch.object(a,"section",side_effect=[first,ValueError("background reached")]) as sample:
+            with self.assertRaisesRegex(ValueError,"background reached"):art.draw(request,"unused-output",a.cache_default())
+            target=sample.call_args_list[0].args[1];background=sample.call_args_list[1].args[1]
+            self.assertEqual(target["slab_um"],[5700,6700]);self.assertEqual(target["position_um"],6200)
+            self.assertEqual(background["position_um"],5700);self.assertEqual(background["mode"],"slice")
+            self.assertNotIn("slab_um",background)
+
     def test_publication_request_cannot_silently_use_qa_renderer(self):
         request={"view":{"plane":"sagittal","position_um":5500},"regions":[{"structure":"PVH"}],"illustration":{"background":"allen-reconstruction","allow_reconstruction":True}}
         with self.assertRaisesRegex(ValueError,"brainmap-illustrate"):
